@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Nav = styled.nav`
+const Nav = styled.nav`
   height: 70px;
   background: #09031b;
   display: flex;
@@ -12,11 +12,12 @@ export const Nav = styled.nav`
   color: ${(props) => props.theme.white};
 `;
 
-export const Logo = styled.img`
+const Logo = styled.img`
   width: 80px;
   pointer: cursor;
 `;
-export const LoginContainer = styled.div`
+
+const LoginContainer = styled.div`
   display: flex;
   flex: 1;
   justify-content: flex-end;
@@ -37,3 +38,4 @@ export const Login = styled.button`
     background-color: rgba(366, 366, 366, 0.09);
   }
 `;
+export { Logo, LoginContainer, Nav };
